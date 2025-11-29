@@ -521,18 +521,12 @@ const socials = [
 ];
 
 const heroTexts = [
-  "React/Next.js developer",
-  500,
-  "Freelancer",
-  500,
-  "Full-Stack developer",
-  500,
-  "Frontend developer",
-  500,
-  "Backend developer",
-  500,
-  "Problem solver",
-  500,
+  "Software Developer",
+  "Full-Stack Engineer",
+  "AI-Driven Web Developer",
+  "MERN / Next.js Developer",
+  "Tech Enthusiast",
+  "Problem Solver",
 ];
 
 export {
