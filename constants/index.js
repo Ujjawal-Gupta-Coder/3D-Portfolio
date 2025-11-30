@@ -3,9 +3,7 @@ import LinkedInIcon from "./../public/assets/icons/linkedin.svg";
 import XIcon from "./../public/assets/icons/x.svg";
 import InstagramIcon from "./../public/assets/icons/instagram.svg";
 import FrontendIcon from "./../public/assets/icons/frontend.svg";
-import LeaderShipIcon from "./../public/assets/icons/leadership.svg";
 import ProblemSolvingIcon from "./../public/assets/icons/problem-solving.svg";
-import FreelancerIcon from "./../public/assets/icons/freelance.svg";
 import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
 
@@ -65,22 +63,14 @@ const services = [
     title: "Frontend Developer",
     icon: <FrontendIcon />,
   },
-  // {
-  //   title: "Backend Developer",
-  //   icon: <BackendIcon />,
-  // },
   {
-    title: "Problem Solving",
+    title: "Backend Developer",
+    icon: <BackendIcon />,
+  },
+  {
+    title: "Problem Solver",
     icon: <ProblemSolvingIcon />,
   },
-  {
-    title: "Freelancer",
-    icon: <FreelancerIcon />,
-  },
-  // {
-  //   title: "Leadership",
-  //   icon: <LeaderShipIcon />,
-  // },
 ];
 
 const technologies = {

@@ -4,29 +4,31 @@ import { fadeIn } from "@/utils/motion";
 
 function ServiceCard({ index, title, icon }) {
   return (
-    <Tilt className="w-[250px]" tiltMaxAngleX="10" tiltMaxAngleY="10">
-      <motion.div
-        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-      >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="dark:bg-bgSecondaryDark bg-bgSecondaryLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-        >
-          <div className="w-16 h-16 object-contain relative">{icon}</div>
-          <h3 className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[20px] font-bold text-center w-[80%]">
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </Tilt>
+    <Tilt
+  className="w-[250px]"
+  tiltMaxAngleX={25}
+  tiltMaxAngleY={25}
+  scale={1.05}
+  perspective={1200}
+  transitionSpeed={900}
+>
+  <motion.div
+    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.25 }}
+    className="w-full p-[2px] rounded-[20px] shadow-card bg-gradient-to-br from-[#65f0ff] via-[#6e3aff] to-[#ff4df4]"
+  >
+    <div className="dark:bg-bgSecondaryDark bg-bgSecondaryLight rounded-[20px] py-6 px-10 min-h-[250px] flex flex-col justify-center items-center text-center">
+      <div className="w-16 h-16 mb-3">{icon}</div>
+      <h3 className="text-[#1d283a] dark:text-ctnPrimaryDark text-[20px] font-bold">
+        {title}
+      </h3>
+    </div>
+  </motion.div>
+</Tilt>
+
+
   );
 }
 
