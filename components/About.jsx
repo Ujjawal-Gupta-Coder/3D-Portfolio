@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { socials } from "../constants";
+import { aboutPoints, RESUME_GOOGLE_DRIVE, socials } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import EmailIcon from "./../public/assets/icons/email.svg";
 
@@ -27,28 +27,30 @@ function About() {
         viewport={{ once: true, amount: 0.25 }}
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
-        <div>
-          Hello! I&apos;m Shivam Sharma, a passionate web developer and problem
-          solver. Currently, I&apos;m the Tech Team Lead at GDSC MVJCE, and
-          I&apos;m pursuing a B.E. degree in Computer Science and Engineering at
-          MVJ College Of Engineering in Bengaluru, India, with an expected
-          graduation year of 2025. I&apos;m a software developer with experience
-          in TypeScript, TailwindCSS, and JavaScript. I specialize in frameworks
-          such as React, Node.js, Next.js, React-Three-Fiber, and Three.js. My
-          knowledge extends to fundamental data structures and algorithms,
-          making me well-versed in frontend web development.
-          <br className="sm:block hidden" />
-          Let&apos;s collaborate to bring your ideas to life!
-        </div>
+  
+      <div className="space-y-3">
+        {
+          aboutPoints.map((about, idx) => {
+          return <div key={idx} className="flex gap-2">
+                  <span>{about.icon}</span>
+                  <p>{about.text}</p>
+                </div>
+          })
+        }
+      </div>
+    <div className="dark:bg-ctnSecondaryDark bg-gray-300 h-[2px] w-full rounded-lg shadow-md"></div>
+
         <div className="w-fit break-words">
           <Link
-            href="mailto:shivamsharma77607@gmail.com"
+            href="mailto:dev.ujjawal.gupta@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
-          >
+            className="w-full gap-2 flex 
+              transition-all duration-300 ease-out
+              hover:-translate-y-1 hover:scale-110"
+            >
             <EmailIcon className="w-[30px] h-[30px]" />
-            shivamsharma77607@gmail.com
+            dev.ujjawal.gupta@gmail.com
           </Link>
         </div>
         <div className="flex gap-5 items-center">
@@ -57,20 +59,21 @@ function About() {
               href={social.link}
               target="_blank"
               key={social.id}
-              className="w-8 h-8 hover:-translate-y-2 ease-in transition-all duration-100 cursor-pointer"
+              className="w-8 h-8 transition-all duration-300 ease-out
+              hover:-translate-y-1 hover:scale-125 cursor-pointer"
             >
               {social.icon}
             </Link>
           ))}
         </div>
         <Link
-          href="document/Shivam_Sharma_Resume.pdf"
+          href={RESUME_GOOGLE_DRIVE}
           target="_blank"
           rel="noreferrer"
           className="w-fit"
         >
-          <div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
-            <div className="original bg-primary text-white px-7 py-2">
+          <div className="btn w-fit bg-indigo-500 text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
+            <div className="original bg-gradient-to-r from-sky-500  via-blue-400 to-indigo-500 text-white px-7 py-2">
               Resume
             </div>
             <div className="letters">

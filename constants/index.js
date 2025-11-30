@@ -9,6 +9,7 @@ import FreelancerIcon from "./../public/assets/icons/freelance.svg";
 import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
 
+const LIVE_LINK = "https://example.com"
 const navLinks = [
   {
     id: "about",
@@ -31,6 +32,29 @@ const navLinks = [
     title: "Contact",
   },
 ];
+
+const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1SNyiDDQjbJIA6ALp67s0_hwgArX7gtyn/view?usp=sharing"
+
+const aboutPoints = [
+  {
+    icon: "💻",
+    text: "Full-stack software developer skilled in MERN, Next.js, React, JavaScript, TypeScript, and AI integrations.",
+  },
+  {
+    icon: "🚀",
+    text: "Built IdeaLink — an AI-powered platform that connects innovators with investors; includes AI summaries, recommendations, pitch generation, email automation, and real-time updates.",
+  },
+  {
+    icon: "🏢",
+    text: "Completed a 6-month internship at TickYourList, working with React & Next.js to improve UI/UX and frontend performance.",
+  },
+  {
+    icon: "🎓",
+    text: "I am currently pursuing a BCA degree from Vikram University, where I am enhancing my technical skills and understanding of computer science.",
+  },
+];
+
+
 
 const services = [
   {
@@ -501,22 +525,22 @@ const socials = [
   {
     id: "github",
     icon: <GithubIcon />,
-    link: "https://github.com/Shivam-Sharma-1",
+    link: "https://github.com/Ujjawal-Gupta-Coder",
   },
   {
     id: "linkedin",
     icon: <LinkedInIcon />,
-    link: "https://www.linkedin.com/in/shivamsharma77607",
+    link: "https://www.linkedin.com/in/ujjawal-gupta-dev/",
   },
   {
     id: "x",
     icon: <XIcon />,
-    link: "https://twitter.com/Shivam_1_Sharma",
+    link: "https://x.com/Ujjawal_Codes",
   },
   {
     id: "instagram",
     icon: <InstagramIcon />,
-    link: "https://www.instagram.com/_.shivam._.here._",
+    link: "https://www.instagram.com/ujjawal_62/",
   },
 ];
 
@@ -530,7 +554,10 @@ const heroTexts = [
 ];
 
 export {
+  LIVE_LINK,
   navLinks,
+  aboutPoints,
+  RESUME_GOOGLE_DRIVE,
   services,
   technologies,
   experiences,

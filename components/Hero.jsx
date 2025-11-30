@@ -26,7 +26,7 @@ function Hero({ loading, isMobile }) {
         >
           <h1 className={`heroHeadText`}>
             Hi, I&apos;m{" "}
-            <span className="dark:text-five text-primary">Ujjawal</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#3F68FF] via-[#7A29FF] to-[#E13CFF] dark:from-[#8BD0FF] dark:via-[#C7B5FF] dark:to-[#E6A9FF]">Ujjawal</span>
           </h1>
           <p className={`heroSubText mt-2 tracking-wide`}>
             <TypeAnimation
