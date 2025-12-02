@@ -52,8 +52,6 @@ const aboutPoints = [
   },
 ];
 
-
-
 const services = [
   {
     title: "Software Developer",
@@ -235,86 +233,39 @@ const technologies = {
 };
 
 const experiences = [
-  // {
-  //   title: "Full Stack Developer",
-  //   company_name: "Tech Lead at GDSC MVJCE",
-  //   icon: "/assets/company/gdsc-logo.svg",
-  //   iconBg: "#E6DEDD",
-  //   date: "July 2023 - Present",
-  //   points: [
-  //     "Currently serving as the Tech Lead of GDSC, responsible for guiding technical aspects, fostering collaboration, and contributing to strategic decisions.",
-  //     "Led induction programs, ensured new member alignment with GDSC's mission, and provided technical mentorship.",
-  //     "Developed GDSC MVJCE website, enhancing the organization's online visibility.",
-  //     "Spearheaded promotional campaigns, actively engaged with the GDSC community, and played a key role in planning and executing events.",
-  //   ],
-  // },
   {
     title: "Frontend Developer Intern",
-    company_name: "Intern at Curowell Healthcare Private Ltd",
-    icon: "/assets/company/curowell-logo.svg",
+    company_name: "TickYourList",
+    link: "https://www.tickyourlist.com/",
+    icon: "/assets/company/tyl.png",
+    // certificate: "https://example.com",
     iconBg: "#E6DEDD",
-    date: "November 2023",
+    date: "Jun 2025 – Dec 2025",
     points: [
-      "Developing a healthcare SaaS platform using Next.js, TypeScript, and Tailwind CSS, significantly enhancing user experience.",
-      "Maintaining an efficient codebase under senior guidance, ensuring adherence to best practices in software development.",
-      "Contributing to the DND form microfrontend, improving user interaction by 30%.",
-      "Collaborating in UI/UX design efforts, leading to a 25% reduction in component development time.",
+      "Built and optimized a complete Admin Dashboard module (add/edit/view/delete cities) using React, Redux-Saga & Formik, reducing manual data handling time by 40%.",
+      "Upgraded the static search bar to an interactive typing search, boosting user engagement by 30%, and added a map view for each tour product, increasing map interactions by 45%.",
+      "Improved the product booking flow using Next.js, React, and Zustand, reducing page load time by 25% and making navigation significantly smoother for users.",
+      "Collaborated in an Agile team of 5+, completing 95% of story-based tasks on time and improving Git/GitHub workflow efficiency by 30%.",
+      "Leveraged AI tools for debugging, refactoring, and automation, increasing development productivity by 25–30%.",  
     ],
   },
   {
-    title: "Full Stack Developer Intern",
-    company_name: "Intern at DRDO CABS",
-    icon: "/assets/company/drdo-cabs.png",
+    title: "Python Programming Intern",
+    company_name: "Ybi Foundation",
+    link: "https://www.ybifoundation.com/",
+    icon: "/assets/company/ybl.png",
+    certificate: "https://drive.google.com/file/d/1Ic7VEleEkwVQPsLlgbdEYhU4HuCiqTd3/view?usp=sharing",
     iconBg: "#E6DEDD",
-    date: "November 2023",
+    date: "Jan 2025",
     points: [
-      "Developed a Facility Bookings Manager for DRDO CABS using TypeScript, React, Node.js, Express, Prisma, and MySQL within a month.",
-      "Actively addressed client issues and queries, ensuring seamless integration with their platform and local cluster system.",
-      "Led the design and implementation of the frontend, providing a user-friendly interface for efficient facility management.",
-      "Collaborated with a backend intern throughout the internship to deliver a comprehensive solution tailored to DRDO CABS's needs.",
+      "Learned core Python fundamentals including data types, loops, functions, and basic problem-solving.",
+      "Built mini Python projects like Guess the Number and Rock–Paper–Scissors, applying logic and clean coding practices.",
+      "Collaborated with mentors to improve debugging, code readability, and standard coding structure.",
     ],
   },
-  // {
-  //   title: "Frontend Developer",
-  //   company_name: "Tech team member at GDSC MVJCE",
-  //   icon: "/assets/company/gdsc-logo.svg",
-  //   iconBg: "#E6DEDD",
-  //   date: "February 2022 - July 2023",
-  //   points: [
-  //     "Successfully planned and executed induction programs, providing new members with crucial information about the organization's goals and values.",
-  //     "Demonstrated web development expertise by conducting CSS workshops, equipping participants with practical web design and styling skills.",
-  //     "Played a crucial role in promoting GDSC events and actively collaborated with cross-functional teams to deliver high-quality projects, fostering teamwork and innovation.",
-  //     "Actively engaged with the GDSC community, assisted in workshops, and contributed to planning and managing GDSC events, ensuring their success and growth.",
-  //   ],
-  // },
+  
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
@@ -552,7 +503,6 @@ export {
   services,
   technologies,
   experiences,
-  testimonials,
   projects,
   socials,
   heroTexts,

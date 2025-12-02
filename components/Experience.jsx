@@ -12,6 +12,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import Link from "next/link";
 
 function ExperienceCard({ experience, theme }) {
   return (
@@ -49,12 +50,29 @@ function ExperienceCard({ experience, theme }) {
         <h3 className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[24px] font-bold">
           {experience.title}
         </h3>
-        <p
+
+        <div className="flex justify-between items-center flex-wrap">
+            <Link
+          href={experience.link}
           className="dark:text-ctnSecondaryDark text-ctnSecondaryLight text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
-        </p>
+        </Link>
+
+        {
+          experience.certificate &&  <Link href={experience.certificate} 
+          className="px-3 py-1 rounded-full text-[11px] font-medium 
+          bg-primary/15 text-primary 
+          border border-primary/20 
+          hover:bg-primary/25 hover:scale-105 
+          transition-all duration-200"> 
+          Certificate
+          </Link>
+        }
+       
+        </div>
+        
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
