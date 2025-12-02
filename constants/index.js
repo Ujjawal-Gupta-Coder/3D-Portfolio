@@ -76,6 +76,21 @@ const services = [
 const technologies = {
   languages: [
     {
+      name: "JavaScript",
+      icon: "/assets/tech/javascript.svg",
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      name: "TypeScript",
+      icon: "/assets/tech/typescript.svg",
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      name: "C++",
+      icon: "/assets/tech/cpp.svg",
+      link: "https://devdocs.io/cpp/",
+    },
+    {
       name: "HTML5",
       icon: "/assets/tech/html5.svg",
       link: "https://html.spec.whatwg.org/multipage/",
@@ -84,27 +99,7 @@ const technologies = {
       name: "CSS3",
       icon: "/assets/tech/css3.svg",
       link: "https://www.w3.org/Style/CSS/Overview.en.html",
-    },
-    {
-      name: "JavaScript",
-      icon: "/assets/tech/javascript.svg",
-      link: "https://262.ecma-international.org/",
-    },
-    {
-      name: "TypeScript",
-      icon: "/assets/tech/typescript.svg",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      name: "C",
-      icon: "/assets/tech/c.svg",
-      link: "https://en.cppreference.com/w/c",
-    },
-    {
-      name: "Java",
-      icon: "/assets/tech/java.svg",
-      link: "https://www.java.com/en/",
-    },
+    }, 
     {
       name: "Python",
       icon: "/assets/tech/python.svg",
@@ -118,51 +113,31 @@ const technologies = {
       link: "https://nextjs.org/",
     },
     {
+      name: "React",
+      icon: "/assets/tech/react.svg",
+      link: "https://react.dev/",
+    },
+    {
       name: "TailwindCSS",
       icon: "/assets/tech/tailwindcss.svg",
       link: "https://tailwindcss.com/",
     },
     {
       name: "Express.js",
-      icon: "/assets/tech/expressjs.png",
+      icon: "/assets/tech/express.svg",
       link: "https://expressjs.com/",
     },
     {
-      name: "Flutter",
-      icon: "/assets/tech/flutter.svg",
-      link: "https://flutter.dev/",
+      name: "Vite",
+      icon: "/assets/tech/vite.svg",
+      link: "https://vite.dev/",
     },
   ],
   libraries: [
     {
-      name: "React",
-      icon: "/assets/tech/react.svg",
-      link: "https://react.dev/",
-    },
-    {
-      name: "Three.js",
-      icon: "/assets/tech/threejs.svg",
-      link: "https://threejs.org/",
-    },
-    {
-      name: "Styled-Components",
-      icon: "/assets/tech/styled-components.png",
-      link: "https://styled-components.com/",
-    },
-    {
-      name: "Framer-motion",
-      icon: "/assets/tech/framer.svg",
-      link: "https://www.framer.com/motion/",
-    },
-    {
-      name: "Zustand",
-      icon: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg",
-      link: "https://zustand-demo.pmnd.rs",
-    },
-    {
-      name: "Redux/Redux-toolkit",
-      icon: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
-      link: "https://redux.js.org",
+      name: "Shadcn",
+      icon: "/assets/tech/shadcn.svg",
+      link: "https://ui.shadcn.com/docs",
     },
     {
       name: "NextAuth.js",
@@ -170,9 +145,29 @@ const technologies = {
       link: "https://next-auth.js.org/",
     },
     {
-      name: "Prisma",
-      icon: "/assets/tech/prisma.svg",
-      link: "https://www.prisma.io/",
+      name: "Socket.io",
+      icon: "/assets/tech/socket-io.svg",
+      link: "https://socket.io/docs/v4/",
+    },
+    {
+      name: "Zustand",
+      icon: "/assets/tech/zustand.svg",
+      link: "https://zustand-demo.pmnd.rs",
+    },
+    {
+      name: "JWT (Authentication)",
+      icon: "/assets/tech/jwt.svg",
+      link: "https://www.jwt.io/introduction",
+    },
+    {
+      name: "Gemini AI API",
+      icon: "/assets/tech/gemini-ai.svg",
+      link: "https://ai.google.dev/gemini-api/docs/libraries",
+    },
+    {
+      name: "Chart.js",
+      icon: "/assets/tech/chart-js.svg",
+      link: "https://www.chartjs.org/docs/latest/",
     },
   ],
   tools: [
@@ -183,8 +178,13 @@ const technologies = {
     },
     {
       name: "Github",
-      icon: "/assets/icons/github.svg",
+      icon: "/assets/tech/github.svg",
       link: "https://github.com/",
+    },
+    {
+      name: "VS Code",
+      icon: "/assets/tech/vs-code.svg",
+      link: "https://code.visualstudio.com/docs",
     },
     {
       name: "Postman",
@@ -192,15 +192,16 @@ const technologies = {
       link: "https://www.postman.com/",
     },
     {
+      name: "Cloudinary",
+      icon: "/assets/tech/cloudinary.svg",
+      link: "https://cloudinary.com/",
+    },
+    {
       name: "Figma",
       icon: "/assets/tech/figma.svg",
       link: "https://www.figma.com/",
     },
-    {
-      name: "Docker",
-      icon: "/assets/tech/docker.svg",
-      link: "https://www.docker.com/",
-    },
+    
   ],
   environments: [
     {
@@ -208,17 +209,17 @@ const technologies = {
       icon: "/assets/tech/nodejs.svg",
       link: "https://nodejs.org/en",
     },
+    {
+      name: "Vercel",
+      icon: "/assets/tech/vercel.svg",
+      link: "https://vercel.com/docs",
+    },
   ],
   databases: [
     {
-      name: "MySQL",
-      icon: "/assets/tech/my-sql.png",
-      link: "https://www.mysql.com/",
-    },
-    {
-      name: "PostgreSQL",
-      icon: "/assets/tech/postgresql.png",
-      link: "https://www.postgresql.org",
+      name: "Sanity",
+      icon: "/assets/tech/sanity.svg",
+      link: "https://www.sanity.io/",
     },
     {
       name: "MongoDB",
@@ -226,9 +227,9 @@ const technologies = {
       link: "https://www.mongodb.com/",
     },
     {
-      name: "Firebase",
-      icon: "/assets/tech/firebase.svg",
-      link: "https://firebase.google.com/",
+      name: "MySQL",
+      icon: "/assets/tech/my-sql.png",
+      link: "https://www.mysql.com/",
     },
   ],
 };

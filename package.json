@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Shivam Sharma",
-    "email": "shivamsharma77607@gmail.com",
-    "github": "@Shivam-Sharma-1",
-    "linkedin": "https://www.linkedin.com/in/shivamsharma77607"
+    "name": "Ujjawal Gupta",
+    "email": "dev.ujjawal.gupta@gmail.com",
+    "github": "https://github.com/Ujjawal-Gupta-Coder",
+    "linkedin": "https://www.linkedin.com/in/ujjawal-gupta-dev/"
   },
   "scripts": {
     "dev": "next dev",
