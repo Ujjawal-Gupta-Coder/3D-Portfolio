@@ -9,12 +9,11 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { experiences } from "../constants";
+import { education } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import Link from "next/link";
 
-function ExperienceCard({ experience, theme }) {
+function EducationCard({ education, theme }) {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -31,14 +30,14 @@ function ExperienceCard({ experience, theme }) {
       style={{
         boxShadow: "0 1px 2px 0 rgb(128, 77, 238 / 0.05)",
       }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg, backgroundColor: "#e0eaf0" }}
+      date={education.duration}
+      iconStyle={{ background: education.iconBg, backgroundColor: "#e0eaf0" }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <div className="w-[70%] h-[70%] relative overflow-hidden">
+          <div className="w-[90%] h-[90%] relative overflow-hidden">
             <Image
-              src={experience.icon}
-              alt={experience.company_name}
+              src={education.icon}
+              alt={education.institute_name}
               fill={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
             />
@@ -48,37 +47,23 @@ function ExperienceCard({ experience, theme }) {
     >
       <div>
         <h3 className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[24px] font-bold">
-          {experience.title}
+          {education.course}
         </h3>
 
-        <div className="flex justify-between items-center flex-wrap">
-            <Link
-          href={experience.link}
+        <p
           className="dark:text-ctnSecondaryDark text-ctnSecondaryLight text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {experience.company_name}
-        </Link>
+          {education.institute_name}
+        </p>
 
-        {
-          experience.certificate &&  <Link href={experience.certificate} 
-          className="px-3 py-1 rounded-full text-[11px] font-medium 
-          bg-primary/15 text-primary 
-          border border-primary/20 
-          hover:bg-primary/25 hover:scale-105 
-          transition-all duration-200"> 
-          Certificate
-          </Link>
-        }
-       
-        </div>
         
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
+        {education.points.map((point, index) => (
           <li
-            key={`experience-point-${index}`}
+            key={`education-point-${index}`}
             className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[14px] pl-1 tracking-wider"
           >
             {point}
@@ -89,7 +74,7 @@ function ExperienceCard({ experience, theme }) {
   );
 }
 
-function Experience() {
+function Education() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -104,16 +89,16 @@ function Experience() {
   return (
     <motion.section className="w-full p-8 mt-20">
       <motion.div variants={textVariant()}>
-        <p className={`sectionSubText text-center`}>What I have done so far</p>
-        <h2 className={`sectionHeadText text-center`}>Work Experience.</h2>
+        <p className={`sectionSubText text-center`}>What I have studied so far</p>
+        <h2 className={`sectionHeadText text-center`}>Education.</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline lineColor={theme === "dark" ? "#7e8c9f" : "#8c9db1"}>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
+          {education.map((education, index) => (
+            <EducationCard
+              key={`education-${index}`}
+              education={education}
               theme={theme}
             />
           ))}
@@ -123,4 +108,4 @@ function Experience() {
   );
 }
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Education, "education");

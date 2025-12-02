@@ -15,6 +15,7 @@ import EarthContainer from "@/components/EarthContainer";
 import PlayerContainer from "@/components/PlayerContainer";
 import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
+import Education from "@/components/Education";
 
 function App({ loading }) {
   useEffect(() => {
@@ -51,6 +52,7 @@ function App({ loading }) {
       </section>
       <Services />
       <Experience />
+      <Education />
       <Tech />
       <Works />
       {/* <Feedbacks /> */}

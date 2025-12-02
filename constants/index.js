@@ -8,6 +8,8 @@ import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
 
 const LIVE_LINK = "https://example.com"
+const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1SNyiDDQjbJIA6ALp67s0_hwgArX7gtyn/view?usp=sharing"
+
 const navLinks = [
   {
     id: "about",
@@ -16,6 +18,10 @@ const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "skills",
@@ -30,8 +36,6 @@ const navLinks = [
     title: "Contact",
   },
 ];
-
-const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1SNyiDDQjbJIA6ALp67s0_hwgArX7gtyn/view?usp=sharing"
 
 const aboutPoints = [
   {
@@ -240,7 +244,7 @@ const experiences = [
     icon: "/assets/company/tyl.png",
     // certificate: "https://example.com",
     iconBg: "#E6DEDD",
-    date: "Jun 2025 – Dec 2025",
+    date: "Jun 2025 – Present",
     points: [
       "Built and optimized a complete Admin Dashboard module (add/edit/view/delete cities) using React, Redux-Saga & Formik, reducing manual data handling time by 40%.",
       "Upgraded the static search bar to an interactive typing search, boosting user engagement by 30%, and added a map view for each tour product, increasing map interactions by 45%.",
@@ -266,6 +270,38 @@ const experiences = [
   
 ];
 
+const education = [
+  {
+    course: "Bachelor of Computer Applications (BCA)",
+    institute_name: "Government Madhav Science College, Vikram University, Ujjain (M.P.)",
+    icon: "/assets/education/college.png",
+    iconBg: "#E6DEDD",
+    duration: "May 2023 – Apr 2026 (Expected)",
+    points: [
+      "Current CGPA : 8.5/10", 
+    ],
+  }, 
+  {
+    course: "Higher Secondary Education",
+    institute_name: "Government Higher Secondary Excellence School, Ujjain (M.P.)",
+    icon: "/assets/education/school.png",
+    iconBg: "#E6DEDD",
+    duration: "May 2022 – Apr 2023",
+    points: [
+      "Percentage Score : 88.8%", 
+    ],
+  }, 
+  {
+    course: "Secondary Education",
+    institute_name: "Government Higher Secondary Excellence School, Ujjain (M.P.)",
+    icon: "/assets/education/school.png",
+    iconBg: "#E6DEDD",
+    duration: "May 2020 – Apr 2021",
+    points: [
+      "Percentage Score : 98%", 
+    ],
+  }, 
+];
 
 const projects = [
   {
@@ -503,6 +539,7 @@ export {
   services,
   technologies,
   experiences,
+  education,
   projects,
   socials,
   heroTexts,
