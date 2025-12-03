@@ -499,6 +499,28 @@ const projects = [
   // }
 ];
 
+const coding = [
+  {
+    platform: "LeetCode",
+    link: "https://leetcode.com/u/Ujjawal-Gupta/",
+    image: "/assets/coding/leetcode.webp",
+    points: [
+      "Top 40%",
+      "Highest Rating: 1503",
+      "300+ Problem Solved"
+    ]
+  },
+  {
+    platform: "GeeksForGeeks",
+    link: "https://www.geeksforgeeks.org/user/ujjawaaale/",
+    image: "/assets/coding/gfg.jpg",
+    points: [
+      "Institute Rank: Top 6",
+      "Coding Score: 650+",
+      "200+ Problem Solved"
+    ]
+  }
+]
 const socials = [
   {
     id: "github",
@@ -541,6 +563,7 @@ export {
   experiences,
   education,
   projects,
+  coding,
   socials,
   heroTexts,
 };
