@@ -16,6 +16,7 @@ import PlayerContainer from "@/components/PlayerContainer";
 import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
 import Education from "@/components/Education";
+import Footer from "@/components/Footer";
 
 function App({ loading }) {
   useEffect(() => {
@@ -57,11 +58,12 @@ function App({ loading }) {
       <Works />
       {/* <Feedbacks /> */}
       <section className="relative z-0 flex md:flex-row justify-between flex-col-reverse w-full h-full overflow-x-hidden sm:p-8 py-2 px-3 pb-8">
-         
         <Contact /> 
         <EarthContainer isMobile={isMobile} />
         <StarsCanvas />
       </section>
+      <Footer />
+      
       <button
         onClick={() => {
           window.scrollTo({

@@ -79,11 +79,11 @@ function Navbar() {
 						</Link>
 					</div>
 
-					<ul className="list-none hidden md:flex flex-row gap-4 items-center">
+					<ul className="list-none hidden md:flex flex-row gap-8 items-center">
 						{navLinks.map((nav) => (
 							<li
 								key={nav.id}
-								className={`dark:text-ctnPrimaryDark text-ctnPrimaryLight border-secondary transition-all duration-200 ease-in text-[16px] lg:text-[18px] font-medium cursor-pointer ${
+								className={`dark:text-ctnPrimaryDark text-ctnPrimaryLight border-secondary transition-all duration-200 ease-in text-[12px] lg:text-[15px] font-medium cursor-pointer ${
 									active === nav.title
 										? "text-quaternary dark:text-quaternary border-b-2 border-quaternary"
 										: "hover:text-tertiary hover:dark:text-tertiary hover:border-y-2"
@@ -94,7 +94,7 @@ function Navbar() {
 							</li>
 						))}
 						<li
-							className={`text-white hover:text-white text-[16px] lg:text-[18px] font-medium cursor-pointer`}
+							className={`text-white hover:text-white text-[12px] lg:text-[15px] font-medium cursor-pointer`}
 						>
 							<ThemeButton />
 						</li>
