@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -6,6 +5,7 @@ import "@/styles/globals.css";
 
 import { PreLoader } from "@/components/Loader";
 import { LIVE_LINK } from '@/constants';
+import { ToastContainer } from "react-toastify";
 
 export default function App({ Component, pageProps }) {
 	const [loading, setLoading] = useState(true);
@@ -69,9 +69,9 @@ export default function App({ Component, pageProps }) {
 			</Head>
 
 			<ThemeProvider attribute="class" defaultTheme="dark">
-				<Component {...pageProps} loading={loading} />
-                <Analytics />
-				{loading && <PreLoader />}
+					<Component {...pageProps} loading={loading} />
+					{loading && <PreLoader />}
+					<ToastContainer />
 			</ThemeProvider>
 		</>
 	);

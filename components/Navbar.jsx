@@ -49,11 +49,11 @@ function Navbar() {
 	return (
 		<>
 			<nav
-				className={`paddingX w-full flex items-center py-5 fixed top-0 z-30 bg-transparent backdrop-filter backdrop-blur-xl bg-opacity-60`}
+				className={`px-6 w-full flex items-center py-5 fixed top-0 z-30 bg-transparent backdrop-filter backdrop-blur-xl bg-opacity-60`}
 			>
 				{avatarToggle && <AvatarModal />}
-				<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-					<div href="/" className="flex items-center gap-6">
+				<div className="w-full flex justify-between items-center mx-auto">
+					<div href="/" className="flex items-center gap-2">
 						<div
 							className="w-9 h-9 object-contain
                         rounded-full relative cursor-pointer"
@@ -79,11 +79,11 @@ function Navbar() {
 						</Link>
 					</div>
 
-					<ul className="list-none hidden md:flex flex-row gap-10 items-center">
+					<ul className="list-none hidden md:flex flex-row gap-4 items-center">
 						{navLinks.map((nav) => (
 							<li
 								key={nav.id}
-								className={`dark:text-ctnPrimaryDark text-ctnPrimaryLight border-secondary transition-all duration-200 ease-in text-[18px] font-medium cursor-pointer ${
+								className={`dark:text-ctnPrimaryDark text-ctnPrimaryLight border-secondary transition-all duration-200 ease-in text-[16px] lg:text-[18px] font-medium cursor-pointer ${
 									active === nav.title
 										? "text-quaternary dark:text-quaternary border-b-2 border-quaternary"
 										: "hover:text-tertiary hover:dark:text-tertiary hover:border-y-2"
@@ -94,7 +94,7 @@ function Navbar() {
 							</li>
 						))}
 						<li
-							className={`text-white hover:text-white text-[18px] font-medium cursor-pointer`}
+							className={`text-white hover:text-white text-[16px] lg:text-[18px] font-medium cursor-pointer`}
 						>
 							<ThemeButton />
 						</li>
