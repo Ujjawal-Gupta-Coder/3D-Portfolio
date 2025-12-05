@@ -581,6 +581,7 @@ const otherProjects = [
     // youtube_link: "",
   },
 ]
+
 const coding = [
   {
     platform: "LeetCode",
