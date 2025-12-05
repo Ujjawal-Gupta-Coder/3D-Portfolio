@@ -6,6 +6,7 @@ import "@/styles/globals.css";
 import { PreLoader } from "@/components/Loader";
 import { LIVE_LINK } from '@/constants';
 import { ToastContainer } from "react-toastify";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function App({ Component, pageProps }) {
 	const [loading, setLoading] = useState(true);
@@ -71,6 +72,7 @@ export default function App({ Component, pageProps }) {
 			<ThemeProvider attribute="class" defaultTheme="dark">
 					<Component {...pageProps} loading={loading} />
 					{loading && <PreLoader />}
+					<Analytics />
 					<ToastContainer />
 			</ThemeProvider>
 		</>
