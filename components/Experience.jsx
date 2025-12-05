@@ -61,7 +61,7 @@ function ExperienceCard({ experience, theme }) {
         </Link>
 
         {
-          experience.certificate &&  <Link href={experience.certificate} 
+          experience.certificate &&  <Link href={experience.certificate}  target="_blank"
           className="px-3 py-1 rounded-full text-[11px] font-medium 
           bg-primary/15 text-primary 
           border border-primary/20 
@@ -102,13 +102,13 @@ function Experience() {
   }
 
   return (
-    <motion.section className="w-full p-8 mt-20">
+    <motion.section className="w-full p-3 mt-5 md:mt-10 pt-0">
       <motion.div variants={textVariant()}>
         <p className={`sectionSubText text-center`}>What I have done so far</p>
         <h2 className={`sectionHeadText text-center`}>Work Experience.</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-8 md:mt-20 flex flex-col">
         <VerticalTimeline lineColor={theme === "dark" ? "#7e8c9f" : "#8c9db1"}>
           {experiences.map((experience, index) => (
             <ExperienceCard

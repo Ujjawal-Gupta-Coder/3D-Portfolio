@@ -87,13 +87,13 @@ function Education() {
   }
 
   return (
-    <motion.section className="w-full p-8 mt-20">
+    <motion.section className="w-full p-3 mt-10 md:mt-20">
       <motion.div variants={textVariant()}>
         <p className={`sectionSubText text-center`}>What I have studied so far</p>
         <h2 className={`sectionHeadText text-center`}>Education.</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-8 md:mt-20 flex flex-col">
         <VerticalTimeline lineColor={theme === "dark" ? "#7e8c9f" : "#8c9db1"}>
           {education.map((education, index) => (
             <EducationCard

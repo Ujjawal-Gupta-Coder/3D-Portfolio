@@ -303,202 +303,284 @@ const education = [
   }, 
 ];
 
-const projects = [
+const topProjects = [
+  // IdeaLink Project
   {
-    name: "QuickEdit: AI-Powered Image & Video Editor",
+    name: "IdeaLink",
     description:
-      "QuickEdit is an AI-powered online image and video editor built using the Cloudinary AI API. It offers robust features for both images and videos, with user-friendly authentication and a tiered credit system. Enhance your media editing experience with cutting-edge AI tools!",
+      "IDEA Link is a platform connecting innovators with investors. Founders can pitch startups, get AI-generated pitches, summaries, recommendations, real-time updates, comments, and profile management. Investors discover, view, and connect instantly via email.",
     tags: [
       {
-        name: "typescript",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "Sanity",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "TypeScript",
         color: "pink-text-gradient",
       },
       {
-        name: "shadcn",
+        name: "Shadcn",
         color: "orange-text-gradient",
       },
       {
-        name: "cloudinary",
+        name: "Tailwind",
         color: "yellow-text-gradient",
       },
     ],
-    image:
-      "https://res.cloudinary.com/dqiqi75hm/image/upload/v1734187202/quickedit/dp6y8s8dstqfpq7svmj5.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/QuickEdit",
-    deployed_link: "https://quick-edit-app.vercel.app",
+    time: "Nov 2025",
+    image: "/assets/projects/ideaLink-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/Idea-Link",
+    live_link: "https://idea-link-orpin.vercel.app/",
+    // youtube_link: "",
   },
+   // ChatSphere Project
   {
-    name: "FigPro",
+    name: "ChatSphere",
     description:
-      "FigPro is a web-based collaborative design tool similar to Figma, built using Next.js, TypeScript, Tailwind CSS, and LiveBlocks API, Fabric.js. With FigPro, teams can seamlessly collaborate on designing interfaces in real-time with a plethora of features.",
+      "ChatSphere is a modern real-time chat app built with the MERN stack and Socket.io, offering smooth real time messaging as well as media sharing. It features profile controls, typing indicators, online user filters, and 30+ dynamic themes for a rich, interactive chat experience.",
     tags: [
       {
-        name: "typescript",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "Zustand",
         color: "pink-text-gradient",
       },
       {
-        name: "fabricjs",
+        name: "Daisyui",
         color: "orange-text-gradient",
       },
       {
-        name: "liveblocks",
+        name: "Cloudinary",
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/fig-pro.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/FigPro",
-    deployed_link: "https://fig-pro-github.vercel.app",
+    time: "Jun 2025",
+    image: "/assets/projects/chatsphere-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/Chat-Sphere",
+    live_link: "https://chat-sphere-eosin.vercel.app/",
+    youtube_link: "https://youtu.be/UB_IZiclm9o?si=KEGzFy0KKw9B4cNN",
   },
-  // {
-  //   name: "GDSC Website",
-  //   description:
-  //     "Welcome to the official repository for the GDSC MVJCE Website, built with Next.js, Styled Components, and Prisma! This website serves as the central hub for all things tech-related at GDSC MVJCE. From insightful blog posts to incredible community projects, and from exciting tech events to getting to know our team, you'll find it all here.",
-  //   tags: [
-  //     {
-  //       name: "next.js",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "styled-components",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "three.js",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "prisma",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "framer-motion",
-  //       color: "yellow-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/gdsc-website.png",
-  //   source_code_link: "https://github.com/GDSC-MVJCE/gdscmvjce-website.git",
-  //   deployed_link: "https://gdscmvjce.vercel.app/",
-  // },
+   // Expense Tracker
   {
-    name: "Facility Management System",
+    name: "Expense Tracker",
     description:
-      "The Facility Management System is a comprehensive management solution developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to book time slots in facilities and provides role-based access control for various functionalities.",
+      "Expense Tracker is a powerful application that helps you add, manage, and analyze your expenses with ease. With features like filtering, dynamic expense tracking, and insightful charts, it ensures better financial planning.",
     tags: [
       {
-        name: "typescript",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
       {
-        name: "node.js",
+        name: "React-Hook-Form",
         color: "orange-text-gradient",
       },
       {
-        name: "tanstack/react-query",
+        name: "Chart.js",
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/facility-manager.png",
-    source_code_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System",
-    deployed_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System?tab=readme-ov-file#demo",
+    time: "Feb 2025",
+    image: "/assets/projects/expensetracker-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/Expense-Tracker",
+    live_link: "https://expense-tracker-mu-sage.vercel.app/",
+    youtube_link: "https://youtu.be/HVAZ6ArPY-8?si=uz1H65WOas-N35hm",
   },
-  // {
-  //   name: "Netflix Clone",
-  //   description:
-  //     "Netflix-Clone is a fully responsive web application that replicates the popular streaming platform Netflix. It is built using Next.js, Prisma, React, NextAuth.js, Tailwind CSS, MongoDB and TypeScript. This project aims to showcase the implementation of these technologies to create a feature-rich clone of Netflix.",
-  //   tags: [
-  //     {
-  //       name: "next.js",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "typescript",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwindcss",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "orange-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/netflix-clone.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Netflix-Clone.git",
-  //   deployed_link: "https://netflix-clone12345.vercel.app",
-  // },
-  // {
-  //   name: "Van-Life",
-  //   description:
-  //     "VanLife is a user-friendly website built with React that simplifies van searches. It is a web app used to browse different types of vans. It allows users to log in and offers convenient tag-based filtering for easy browsing.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mirage.js",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "firebase-firestore",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/vanlife.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Van-Life.git",
-  //   deployed_link: "https://myvanlife.netlify.app",
-  // },
-  // {
-  // 	name: "Spooky-Run",
-  // 	description:
-  // 		"Spooky Run is a web based 2D arcade style game that allows players to play as a lost dog finding its way back home through a spooky forest. The game is built using vanilla JavaScript and utilizes HTML5 and the 'canvas' element to render graphics and handle user input.",
-  // 	tags: [
-  // 		{
-  // 			name: "html5",
-  // 			color: "blue-text-gradient"
-  // 		},
-  // 		{
-  // 			name: "css3",
-  // 			color: "green-text-gradient"
-  // 		},
-  // 		{
-  // 			name: "javascript",
-  // 			color: "pink-text-gradient"
-  // 		}
-  // 	],
-  // 	image: "/assets/projects/spooky-run.png",
-  // 	source_code_link: "https://github.com/Shivam-Sharma-1/Spooky-Run.git",
-  // 	deployed_link: "https://shivam-sharma-1.github.io/Spooky-Run"
-  // }
 ];
 
+const otherProjects = [
+  // 3D Portfolio
+  {
+    name: "3D Portfolio",
+    description:
+      "A fully responsive 3D animated portfolio with interactive elements like a computer and Earth. It showcases my About Me, education, experience, skills, projects, coding profiles, and social links. Includes a contact form with email support, dark/light mode, and smooth, dynamic UI.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React-three/fiber",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "yellow-text-gradient",
+      },
+    ],
+    time: "Dec 2025",
+    image: "/assets/projects/3d-portfolio-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/3D-Portfolio",
+    // live_link: "",
+    // youtube_link: "",
+  },
+  // My Portfolio
+  {
+    name: "My Portfolio",
+    description:
+      "A personal portfolio showcasing my skills, projects, education, and achievements. Designed for simplicity and clarity, it highlights my expertise and provides easy ways to connect and collaborate.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "pink-text-gradient",
+      },
+    ],
+    time: "Jan 2025",
+    image: "/assets/projects/portfolio-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/My-Portfolio",
+    live_link: "https://ujjawal-gupta-coder.github.io/My-Portfolio/",
+    // youtube_link: "",
+  },
+   // World Atlas Project 
+  {
+    name: "World Atlas",
+    description:
+      "A dynamic country info app with search, continent filters, dedicated routes, and dark/light mode. Users can view population, language, capital, flags, maps, and border countries. Features hover cards, Google Maps, shimmer loading, a not-found page, and full responsiveness.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "API",
+        color: "orange-text-gradient",
+      },
+    ],
+    time: "Dec 2024",
+    image: "/assets/projects/worldAtlas-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/WorldAtlas",
+    live_link: "https://world-atlas-nine.vercel.app/",
+    youtube_link: "https://youtu.be/ScEMPGsTI4I?si=CW8QwQspASpn7NRE",
+  },
+  // Currency Convertor Project
+  {
+    name: "Currency Convertor",
+    description:
+      "A modern, responsive currency converter with real-time rates, country flags, and easy dropdown selection. Convert instantly and swap currencies with one click. Perfect for travelers and professionals, offering a fast, smooth, and intuitive experience on all devices.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "API",
+        color: "orange-text-gradient",
+      },
+    ],
+    time: "Sep 2024",
+    image: "/assets/projects/currencyConvertor-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/Currency-Convertor",
+    live_link: "https://currency-convertor-flax-sigma.vercel.app/",
+    // youtube_link: "",
+  },
+  // Calculator Project
+  {
+    name: "Calculator",
+    description:
+      "A user-friendly calculator application that handles basic arithmetic operations, features error handling, and offers a responsive design.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "orange-text-gradient",
+      },
+    ],
+    time: "Jul 2024",
+    image: "/assets/projects/calculator-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/My_Calculator",
+    live_link: "https://my-calculator-beige.vercel.app/",
+    // youtube_link: "",
+  },
+  // Todo Application Project
+  {
+    name: "Todo Application",
+    description:
+      "A simple and responsive to-do application that helps users manage tasks with ease, featuring CRUD operations, task completion tracking, and local storage support.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Local Storage",
+        color: "orange-text-gradient",
+      },
+    ],
+    time: "Jun 2024",
+    image: "/assets/projects/todo-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/ToDo-Application",
+    live_link: "https://to-do-application-wine.vercel.app/",
+    // youtube_link: "",
+  },
+]
 const coding = [
   {
     platform: "LeetCode",
@@ -521,6 +603,7 @@ const coding = [
     ]
   }
 ]
+
 const socials = [
   {
     id: "github",
@@ -562,7 +645,8 @@ export {
   technologies,
   experiences,
   education,
-  projects,
+  topProjects,
+  otherProjects,
   coding,
   socials,
   heroTexts,

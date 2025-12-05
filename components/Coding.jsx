@@ -2,7 +2,6 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 import { coding } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import Link from "next/link";
@@ -17,10 +16,10 @@ function CodingCard({
 
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("up", "spring", index * 0.2, 0.75)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.15 }}
     >
         <Link href={link} target="_blank" className="w-full h-full relative">
             <Tilt
@@ -75,8 +74,6 @@ function Coding() {
         <p className={"sectionSubText"}>What I have solved so far</p>
         <h2 className={"sectionHeadText"}>Coding Practice Journey.</h2>
       </motion.div>
-
-      
 
       <div className="md:mt-20 mt-10 flex justify-center flex-col md:flex-row gap-6 md:gap-10">
         {coding.map((platform, index) => (
