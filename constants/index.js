@@ -332,7 +332,7 @@ const topProjects = [
       },
     ],
     time: "Nov 2025",
-    image: "/assets/projects/ideaLink-project.png",
+    image: "/assets/projects/idea-link-project.png",
     github_link: "https://github.com/Ujjawal-Gupta-Coder/Idea-Link",
     live_link: "https://idea-link-orpin.vercel.app/",
     // youtube_link: "",

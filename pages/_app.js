@@ -69,10 +69,11 @@ export default function App({ Component, pageProps }) {
 				/>
 			</Head>
 
+			<Analytics />
+			
 			<ThemeProvider attribute="class" defaultTheme="dark">
 					<Component {...pageProps} loading={loading} />
 					{loading && <PreLoader />}
-					<Analytics />
 					<ToastContainer />
 			</ThemeProvider>
 		</>
