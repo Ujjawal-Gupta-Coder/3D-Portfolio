@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
 		}
 	}, [loading]);
 
-	const title = "Portfolio | Ujjawal Gupta";
+	const title = "Ujjawal Gupta | Software developer";
 	const description =
 		"Hello! I'm Ujjawal Gupta, a passionate web developer and problem solver. Welcome to my portfolio";
 	

@@ -13,7 +13,6 @@ import {
 import HeroBackground from "@/components/HeroBackground";
 import EarthContainer from "@/components/EarthContainer";
 import PlayerContainer from "@/components/PlayerContainer";
-import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
@@ -64,19 +63,7 @@ function App({ loading }) {
         <StarsCanvas />
       </section>
       <Footer />
-      
-      <button
-        onClick={() => {
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth",
-          });
-        }}
-        className="fixed md:w-10 md:h-10 h-8 w-8 p-2 bottom-8 md:right-10 right-8 text-center text-secondary backdrop-filter backdrop-blur-xl bg-opacity-20 bg-tertiary rounded-lg hover:scale-110 transition-all duration-300"
-      >
-        <UpArrow />
-      </button>
+
     </main>
   );
 }
