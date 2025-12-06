@@ -436,8 +436,8 @@ const otherProjects = [
     time: "Dec 2025",
     image: "/assets/projects/3d-portfolio-project.png",
     github_link: "https://github.com/Ujjawal-Gupta-Coder/3D-Portfolio",
-    // live_link: "",
-    // youtube_link: "",
+    live_link: "https://ujjawalgupta.vercel.app/",
+    youtube_link: "https://youtu.be/XjqKeCCGbAA",
   },
   // My Portfolio
   {
