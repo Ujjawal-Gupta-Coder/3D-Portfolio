@@ -335,7 +335,7 @@ const topProjects = [
     image: "/assets/projects/idea-link-project.png",
     github_link: "https://github.com/Ujjawal-Gupta-Coder/Idea-Link",
     live_link: "https://idea-link-orpin.vercel.app/",
-    // youtube_link: "",
+    youtube_link: "https://youtu.be/Wzaoukdz1WY",
   },
    // ChatSphere Project
   {
