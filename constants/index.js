@@ -246,11 +246,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jun 2025 – Present",
     points: [
-      "Built and optimized a complete Admin Dashboard module (add/edit/view/delete cities) using React, Redux-Saga & Formik, reducing manual data handling time by 40%.",
-      "Upgraded the static search bar to an interactive typing search, boosting user engagement by 30%, and added a map view for each tour product, increasing map interactions by 45%.",
-      "Improved the product booking flow using Next.js, React, and Zustand, reducing page load time by 25% and making navigation significantly smoother for users.",
-      "Collaborated in an Agile team of 5+, completing 95% of story-based tasks on time and improving Git/GitHub workflow efficiency by 30%.",
-      "Leveraged AI tools for debugging, refactoring, and automation, increasing development productivity by 25–30%.",  
+      "Built a full-featured Admin Dashboard with CRUD workflows using React, Redux-Saga, and Formik for tour and city management.",
+      "Integrated interactive maps with React Leaflet, Carto, and OpenStreetMap for location-based tour discovery.",
+      "Developed a reusable cashback badge component with hover tooltips using React and Tailwind CSS, showing discounts across booking flows.",
+      "reated a real-time booking summary component using React, Next.js, and Tailwind CSS to reflect user-selected tour options.",
+      "Worked in an Agile/Scrum environment, contributing to sprint planning, code reviews, and team collaboration via Git/GitHub.",  
     ],
   },
   {
