@@ -242,9 +242,9 @@ const experiences = [
     company_name: "TickYourList",
     link: "https://www.tickyourlist.com/",
     icon: "/assets/company/tyl.png",
-    // certificate: "https://example.com",
+    certificate: "https://drive.google.com/file/d/1676AX8LPbL6-incyX13dFm__iCoVZAe5/view?usp=sharing",
     iconBg: "#E6DEDD",
-    date: "Jun 2025 – Present",
+    date: "Jun 2025 – Dec 2025",
     points: [
       "Built a full-featured Admin Dashboard with CRUD workflows using React, Redux-Saga, and Formik for tour and city management.",
       "Integrated interactive maps with React Leaflet, Carto, and OpenStreetMap for location-based tour discovery.",
