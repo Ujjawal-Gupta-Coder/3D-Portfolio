@@ -8,7 +8,7 @@ import { heroTexts } from "@/constants";
 function Hero({ loading, isMobile }) {
   return (
     <section
-      className={`relative w-full h-[100svh] md:max-h-[800px] max-h-[600px] mx-auto flex flex-col`}
+      className={`relative w-full h-[100svh] md:max-h-[700px] lg:max-h-[800px] max-h-[600px] mx-auto flex flex-col`}
     >
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto paddingX flex flex-row items-start gap-5`}
@@ -33,7 +33,6 @@ function Hero({ loading, isMobile }) {
               sequence={heroTexts}
               // preRenderFirstString={true}
               wrapper="span"
-              speed={35}
               cursor={true}
               repeat={Infinity}
             />
