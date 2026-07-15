@@ -24,9 +24,9 @@ function App({ loading }) {
   }, []);
 
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery = window.matchMedia("(max-width: 1100px)");
+
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {

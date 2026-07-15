@@ -8,7 +8,7 @@ import EmailIcon from "./../public/assets/icons/email.svg";
 function About() {
   return (
     <section
-      className="md:my-36 md:w-2/3 w-full h-full xl:ml-36 lg:ml-12 p-8 md:mt-[40svh] xl:mt-[150px]"
+      className="md:my-36 md:w-[90%] w-full h-full xl:ml-36 lg:ml-12 sm:mx-6 p-8 sm:pr-16 md:mt-[40svh] xl:mt-[150px]"
       id="about"
     >
       <motion.div

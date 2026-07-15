@@ -38,35 +38,35 @@ const navLinks = [
 ];
 
 const aboutPoints = [
-  {
-    icon: "💻",
-    text: "Full-stack software developer skilled in MERN, Next.js, React, JavaScript, TypeScript, and AI integrations.",
-  },
-  {
-    icon: "🚀",
-    text: "Built IdeaLink — an AI-powered platform that connects innovators with investors; includes AI summaries, recommendations, pitch generation, email automation, and real-time updates.",
-  },
-  {
-    icon: "🏢",
-    text: "Completed a 6-month internship at TickYourList, working with React & Next.js to improve UI/UX and frontend performance.",
-  },
-  {
-    icon: "🎓",
-    text: "I am currently pursuing a BCA degree from Vikram University, where I am enhancing my technical skills and understanding of computer science.",
-  },
+{
+  icon: "💻",
+  text: "Full-stack developer building modern web applications with MERN, Next.js, TypeScript, and AI.",
+},
+{
+  icon: "🚀",
+  text: "Creator of IdeaLink—an AI-powered startup platform connecting innovators with investors.",
+},
+{
+  icon: "🏢",
+  text: "Completed 6-month internship at TickYourList, improving UI/UX and frontend performance.",
+},
+{
+  icon: "🎓",
+  text: "BCA graduate, currently pursuing an MCA with a strong focus on software development.",
+},
 ];
 
 const services = [
   {
-    title: "Software Developer",
+    title: "Full-Stack Developer",
     icon: <FullStackIcon />,
   },
   {
-    title: "Frontend Developer",
+    title: "Modern Web Developer",
     icon: <FrontendIcon />,
   },
   {
-    title: "Backend Developer",
+    title: "AI Integrator",
     icon: <BackendIcon />,
   },
   {
@@ -88,11 +88,6 @@ const technologies = {
       link: "https://www.typescriptlang.org/",
     },
     {
-      name: "C++",
-      icon: "/assets/tech/cpp.svg",
-      link: "https://devdocs.io/cpp/",
-    },
-    {
       name: "HTML5",
       icon: "/assets/tech/html5.svg",
       link: "https://html.spec.whatwg.org/multipage/",
@@ -103,31 +98,31 @@ const technologies = {
       link: "https://www.w3.org/Style/CSS/Overview.en.html",
     }, 
     {
-      name: "Python",
-      icon: "/assets/tech/python.svg",
-      link: "https://www.python.org/",
+      name: "C++",
+      icon: "/assets/tech/cpp.svg",
+      link: "https://devdocs.io/cpp/",
     },
   ],
   frameworks: [
-    {
-      name: "Next.js",
-      icon: "/assets/tech/nextjs.svg",
-      link: "https://nextjs.org/",
-    },
     {
       name: "React",
       icon: "/assets/tech/react.svg",
       link: "https://react.dev/",
     },
     {
-      name: "TailwindCSS",
-      icon: "/assets/tech/tailwindcss.svg",
-      link: "https://tailwindcss.com/",
+      name: "Next.js",
+      icon: "/assets/tech/nextjs.svg",
+      link: "https://nextjs.org/",
     },
     {
       name: "Express.js",
       icon: "/assets/tech/express.svg",
       link: "https://expressjs.com/",
+    },
+    {
+      name: "TailwindCSS",
+      icon: "/assets/tech/tailwindcss.svg",
+      link: "https://tailwindcss.com/",
     },
     {
       name: "Vite",
@@ -137,6 +132,11 @@ const technologies = {
   ],
   libraries: [
     {
+      name: "Socket.io",
+      icon: "/assets/tech/socket-io.svg",
+      link: "https://socket.io/docs/v4/",
+    },
+    {
       name: "Shadcn",
       icon: "/assets/tech/shadcn.svg",
       link: "https://ui.shadcn.com/docs",
@@ -145,11 +145,6 @@ const technologies = {
       name: "NextAuth.js",
       icon: "/assets/tech/nextauthjs.png",
       link: "https://next-auth.js.org/",
-    },
-    {
-      name: "Socket.io",
-      icon: "/assets/tech/socket-io.svg",
-      link: "https://socket.io/docs/v4/",
     },
     {
       name: "Zustand",
@@ -194,16 +189,15 @@ const technologies = {
       link: "https://www.postman.com/",
     },
     {
+      name: "RESTful APIs",
+      icon: "/assets/tech/rest-api.svg",
+      link: "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+    },
+    {
       name: "Cloudinary",
       icon: "/assets/tech/cloudinary.svg",
       link: "https://cloudinary.com/",
     },
-    {
-      name: "Figma",
-      icon: "/assets/tech/figma.svg",
-      link: "https://www.figma.com/",
-    },
-    
   ],
   environments: [
     {
@@ -216,13 +210,13 @@ const technologies = {
       icon: "/assets/tech/vercel.svg",
       link: "https://vercel.com/docs",
     },
+    {
+      name: "Render",
+      icon: "/assets/tech/render.jpeg",
+      link: "https://render.com/docs",
+    },
   ],
   databases: [
-    {
-      name: "Sanity",
-      icon: "/assets/tech/sanity.svg",
-      link: "https://www.sanity.io/",
-    },
     {
       name: "MongoDB",
       icon: "/assets/tech/mongodb.svg",
@@ -232,6 +226,11 @@ const technologies = {
       name: "MySQL",
       icon: "/assets/tech/my-sql.png",
       link: "https://www.mysql.com/",
+    },
+    {
+      name: "Sanity",
+      icon: "/assets/tech/sanity.svg",
+      link: "https://www.sanity.io/",
     },
   ],
 };
@@ -246,12 +245,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jun 2025 – Dec 2025",
     points: [
-      "Built a full-featured Admin Dashboard with CRUD workflows using React, Redux-Saga, and Formik for tour and city management.",
-      "Integrated interactive maps with React Leaflet, Carto, and OpenStreetMap for location-based tour discovery.",
-      "Developed a reusable cashback badge component with hover tooltips using React and Tailwind CSS, showing discounts across booking flows.",
-      "reated a real-time booking summary component using React, Next.js, and Tailwind CSS to reflect user-selected tour options.",
-      "Worked in an Agile/Scrum environment, contributing to sprint planning, code reviews, and team collaboration via Git/GitHub.",  
-    ],
+      "Built a full-featured admin dashboard with CRUD functionality.",
+      "Integrated interactive maps for location-based tour discovery.",
+      "Developed reusable UI components to improve consistency.",
+      "Created a real-time booking summary with instant updates.",
+      "Collaborated in Agile sprints using Git/GitHub and code reviews.",  
+     ],
   },
   {
     title: "Python Programming Intern",
@@ -262,9 +261,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2025",
     points: [
-      "Learned core Python fundamentals including data types, loops, functions, and basic problem-solving.",
-      "Built mini Python projects like Guess the Number and Rock–Paper–Scissors, applying logic and clean coding practices.",
-      "Collaborated with mentors to improve debugging, code readability, and standard coding structure.",
+      "Mastered Python fundamentals, including problem-solving and core programming concepts.",
+      "Built mini Python applications to apply programming logic and practical skills.",
+      "Strengthened debugging, code quality, and clean coding practices through mentorship.",
     ],
   },
   
@@ -272,13 +271,23 @@ const experiences = [
 
 const education = [
   {
-    course: "Bachelor of Computer Applications (BCA)",
-    institute_name: "Government Madhav Science College, Vikram University, Ujjain (M.P.)",
-    icon: "/assets/education/college.png",
+    course: "Master of Computer Applications (MCA)",
+    institute_name: "Institute of Computer Science, Vikram University Ujjain (M.P.)",
+    icon: "/assets/education/college_mca.png",
     iconBg: "#E6DEDD",
-    duration: "May 2023 – Apr 2026 (Expected)",
+    duration: "Jul 2026 – Aug 2028 (Expected)",
     points: [
-      "Current CGPA : 8.5/10", 
+      // "Current CGPA : --/10", 
+    ],
+  }, 
+  {
+    course: "Bachelor of Computer Applications (BCA)",
+    institute_name: "Government Madhav Science PG College, Ujjain (M.P.)",
+    icon: "/assets/education/college_bca.png",
+    iconBg: "#E6DEDD",
+    duration: "May 2023 – Apr 2026",
+    points: [
+      "CGPA : 8.3/10", 
     ],
   }, 
   {
@@ -589,8 +598,8 @@ const coding = [
     image: "/assets/coding/leetcode.webp",
     points: [
       "Top 40%",
-      "Highest Rating: 1503",
-      "300+ Problem Solved"
+      "Highest Rating: 1513",
+      "350+ Problem Solved"
     ]
   },
   {
@@ -598,8 +607,8 @@ const coding = [
     link: "https://www.geeksforgeeks.org/user/ujjawaaale/",
     image: "/assets/coding/gfg.jpg",
     points: [
-      "Institute Rank: Top 6",
-      "Coding Score: 650+",
+      "Institute Rank: Top 5",
+      "Coding Score: 700+",
       "200+ Problem Solved"
     ]
   }
@@ -630,10 +639,8 @@ const socials = [
 
 const heroTexts = [
   "Software Developer",
+  "AI-powered Web Developer",
   "Full-Stack Engineer",
-  "AI-Driven Web Developer",
-  "MERN / Next.js Developer",
-  "Tech Enthusiast",
   "Problem Solver",
 ];
 

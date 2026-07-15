@@ -33,6 +33,7 @@ function Hero({ loading, isMobile }) {
               sequence={heroTexts}
               // preRenderFirstString={true}
               wrapper="span"
+              speed={35}
               cursor={true}
               repeat={Infinity}
             />

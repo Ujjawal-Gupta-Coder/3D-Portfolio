@@ -53,7 +53,7 @@ function ComputersCanvas({ isMobile }) {
         outputColorSpace: THREE.SRGBColorSpace,
         alpha: true,
       }}
-      className="cursor-pointer"
+      className="cursor-pointer md:max-h-[400px] lg:max-h-[550px] xl:max-h-[700px] md:mt-16 lg:mt-12 xl:mt-0"
     >
       <Suspense fallback={<CanvasLoader />}>
         <Computers isMobile={isMobile} />

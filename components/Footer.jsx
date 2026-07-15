@@ -18,7 +18,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="text-[10px] sm:text-sm">
-            ©️ 2025 Design & Code. Built With Love ❤️ by Ujjawal Gupta.
+            ©️ {new Date().getFullYear()} Design & Code. Built With Love ❤️ by Ujjawal Gupta.
           </p>
         </div>
       </footer>
