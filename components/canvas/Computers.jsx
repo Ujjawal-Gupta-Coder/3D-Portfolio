@@ -6,12 +6,14 @@ import {
 } from "@react-three/drei";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
 import CanvasLoader from "../Loader";
 import ComputerModel from "./models/ComputerModel";
+import { useMotionValue } from "framer-motion";
+import Tooltip from "../Tooltip";
 
-function Computers({ isMobile }) {
+function Computers({ isMobile, setHovered, mouseX, mouseY }) {
   const { nodes, materials } = useGLTF("/models/desktop_pc/scene.gltf");
 
   return (
@@ -39,27 +41,41 @@ function Computers({ isMobile }) {
         scale={isMobile ? 0.45 : 0.35}
         position={isMobile ? [-0.75, -0.7, 0] : [-0.5, -0.5, 0]}
         rotation={[-0.01, 1.6, -0.1]}
+        setHovered={setHovered}
+        mouseX={mouseX}
+        mouseY={mouseY}
       />
     </>
   );
 }
 
 function ComputersCanvas({ isMobile }) {
+  const [hovered, setHovered] = useState(false);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
   return (
-    <Canvas
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{
-        outputColorSpace: THREE.SRGBColorSpace,
-        alpha: true,
-      }}
-      className="cursor-pointer md:max-h-[400px] lg:max-h-[550px] xl:max-h-[700px] md:mt-16 lg:mt-12 xl:mt-0"
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <Computers isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <>
+      <Canvas
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{
+          outputColorSpace: THREE.SRGBColorSpace,
+          alpha: true,
+        }}
+        className="cursor-pointer md:max-h-[400px] lg:max-h-[550px] xl:max-h-[700px] md:mt-16 lg:mt-12 xl:mt-0"
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <Computers
+            isMobile={isMobile}
+            setHovered={setHovered}
+            mouseX={mouseX}
+            mouseY={mouseY}
+          />
+        </Suspense>
+        <Preload all />
+      </Canvas>
+      <Tooltip hovered={hovered} mouseX={mouseX} mouseY={mouseY} />
+    </>
   );
 }
 
