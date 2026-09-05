@@ -8,7 +8,9 @@ import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
 
 const LIVE_LINK = "https://example.com"
-const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1SNyiDDQjbJIA6ALp67s0_hwgArX7gtyn/view?usp=sharing"
+
+//🔦 temperarily closed: const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1SNyiDDQjbJIA6ALp67s0_hwgArX7gtyn/view?usp=sharing"
+const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1tLiRLYXSuv78GnIPY6_t1YDXohLdzPfb/view?usp=sharing"
 
 const navLinks = [
   {
@@ -313,6 +315,39 @@ const education = [
 ];
 
 const topProjects = [
+  // HireLoop Project
+  {
+    name: "HireLoop",
+    description:
+      "HireLoop is an AI-powered interview preparation platform that simulates technical, coding, system design, and behavioral interviews with AI-driven questioning, voice interviews, real-time coding, transcription, analytics, and PDF reports.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Google Gemini",
+        color: "yellow-text-gradient",
+      },
+    ],
+    time: "Aug 2026 (Ongoing)",
+    image: "/assets/projects/hireloop-project.png",
+    github_link: "https://github.com/Ujjawal-Gupta-Coder/HireLoop",
+    live_link: "https://hireloop-ai.vercel.app/",
+    // youtube_link: "https://youtu.be/Wzaoukdz1WY",
+  },
   // IdeaLink Project
   {
     name: "IdeaLink",
@@ -379,7 +414,10 @@ const topProjects = [
     live_link: "https://chat-sphere-eosin.vercel.app/",
     youtube_link: "https://youtu.be/UB_IZiclm9o?si=KEGzFy0KKw9B4cNN",
   },
-   // Expense Tracker
+];
+
+const otherProjects = [
+  // Expense Tracker
   {
     name: "Expense Tracker",
     description:
@@ -412,9 +450,6 @@ const topProjects = [
     live_link: "https://expense-tracker-mu-sage.vercel.app/",
     youtube_link: "https://youtu.be/HVAZ6ArPY-8?si=uz1H65WOas-N35hm",
   },
-];
-
-const otherProjects = [
   // 3D Portfolio
   {
     name: "3D Portfolio",
