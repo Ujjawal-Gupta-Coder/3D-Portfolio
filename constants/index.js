@@ -9,8 +9,7 @@ import FullStackIcon from "./../public/assets/icons/full-stack.svg";
 
 const LIVE_LINK = "https://example.com"
 
-//🔦 temperarily closed: const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1SNyiDDQjbJIA6ALp67s0_hwgArX7gtyn/view?usp=sharing"
-const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1tLiRLYXSuv78GnIPY6_t1YDXohLdzPfb/view?usp=sharing"
+const RESUME_GOOGLE_DRIVE = "https://drive.google.com/file/d/1SNyiDDQjbJIA6ALp67s0_hwgArX7gtyn/view?usp=sharing"
 
 const navLinks = [
   {
@@ -46,7 +45,7 @@ const aboutPoints = [
 },
 {
   icon: "🚀",
-  text: "Creator of IdeaLink—an AI-powered startup platform connecting innovators with investors.",
+  text: "Creator of HireLoop, an AI-powered voice interview preparation platform with detailed analytics and a credit-based payment system.",
 },
 {
   icon: "🏢",
@@ -90,6 +89,11 @@ const technologies = {
       link: "https://www.typescriptlang.org/",
     },
     {
+      name: "C++",
+      icon: "/assets/tech/cpp.svg",
+      link: "https://devdocs.io/cpp/",
+    },
+    {
       name: "HTML5",
       icon: "/assets/tech/html5.svg",
       link: "https://html.spec.whatwg.org/multipage/",
@@ -99,11 +103,6 @@ const technologies = {
       icon: "/assets/tech/css3.svg",
       link: "https://www.w3.org/Style/CSS/Overview.en.html",
     }, 
-    {
-      name: "C++",
-      icon: "/assets/tech/cpp.svg",
-      link: "https://devdocs.io/cpp/",
-    },
   ],
   frameworks: [
     {
@@ -126,11 +125,6 @@ const technologies = {
       icon: "/assets/tech/tailwindcss.svg",
       link: "https://tailwindcss.com/",
     },
-    {
-      name: "Vite",
-      icon: "/assets/tech/vite.svg",
-      link: "https://vite.dev/",
-    },
   ],
   libraries: [
     {
@@ -139,9 +133,14 @@ const technologies = {
       link: "https://socket.io/docs/v4/",
     },
     {
-      name: "Shadcn",
-      icon: "/assets/tech/shadcn.svg",
-      link: "https://ui.shadcn.com/docs",
+      name: "Gemini AI API",
+      icon: "/assets/tech/gemini-ai.svg",
+      link: "https://ai.google.dev/gemini-api/docs/libraries",
+    },
+    {
+      name: "Web Speech API",
+      icon: "/assets/tech/webspeechapi.svg",
+      link: "https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API",
     },
     {
       name: "NextAuth.js",
@@ -149,9 +148,9 @@ const technologies = {
       link: "https://next-auth.js.org/",
     },
     {
-      name: "Zustand",
-      icon: "/assets/tech/zustand.svg",
-      link: "https://zustand-demo.pmnd.rs",
+      name: "Stripe",
+      icon: "/assets/tech/stripe.svg",
+      link: "https://stripe.com/",
     },
     {
       name: "JWT (Authentication)",
@@ -159,14 +158,9 @@ const technologies = {
       link: "https://www.jwt.io/introduction",
     },
     {
-      name: "Gemini AI API",
-      icon: "/assets/tech/gemini-ai.svg",
-      link: "https://ai.google.dev/gemini-api/docs/libraries",
-    },
-    {
-      name: "Chart.js",
-      icon: "/assets/tech/chart-js.svg",
-      link: "https://www.chartjs.org/docs/latest/",
+      name: "Shadcn",
+      icon: "/assets/tech/shadcn.svg",
+      link: "https://ui.shadcn.com/docs",
     },
   ],
   tools: [
@@ -213,9 +207,9 @@ const technologies = {
       link: "https://vercel.com/docs",
     },
     {
-      name: "Render",
-      icon: "/assets/tech/render.jpeg",
-      link: "https://render.com/docs",
+      name: "Vite",
+      icon: "/assets/tech/vite.svg",
+      link: "https://vite.dev/",
     },
   ],
   databases: [
@@ -225,9 +219,19 @@ const technologies = {
       link: "https://www.mongodb.com/",
     },
     {
-      name: "MySQL",
-      icon: "/assets/tech/my-sql.png",
-      link: "https://www.mysql.com/",
+      name: "PostgreSQL",
+      icon: "/assets/tech/postgresql.svg",
+      link: "https://www.postgresql.org/",
+    },
+    {
+      name: "Prisma",
+      icon: "/assets/tech/prisma.svg",
+      link: "https://www.prisma.io/",
+    },
+    {
+      name: "Supabase",
+      icon: "/assets/tech/supabase.svg",
+      link: "https://supabase.com/",
     },
     {
       name: "Sanity",
@@ -319,14 +323,14 @@ const topProjects = [
   {
     name: "HireLoop",
     description:
-      "HireLoop is an AI-powered interview preparation platform that simulates technical, coding, system design, and behavioral interviews with AI-driven questioning, voice interviews, real-time coding, transcription, analytics, and PDF reports.",
+      "HireLoop is a full-stack AI-powered voice interview platform for realistic practice. Configure and conduct AI voice interviews, resume interrupted sessions, and get detailed analytics with downloadable reports. Includes credit-based payments, Stripe integration, and billing.",
     tags: [
       {
         name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "React",
+        name: "Stripe Payment",
         color: "green-text-gradient",
       },
       {
@@ -338,15 +342,15 @@ const topProjects = [
         color: "orange-text-gradient",
       },
       {
-        name: "Google Gemini",
+        name: "Google Gemini API",
         color: "yellow-text-gradient",
       },
     ],
-    time: "Aug 2026 (Ongoing)",
+    time: "Sep 2026",
     image: "/assets/projects/hireloop-project.png",
     github_link: "https://github.com/Ujjawal-Gupta-Coder/HireLoop",
     live_link: "https://hireloop-ai.vercel.app/",
-    // youtube_link: "https://youtu.be/Wzaoukdz1WY",
+    youtube_link: "https://youtu.be/OJcXNXraMgA",
   },
   // IdeaLink Project
   {
